@@ -10,9 +10,5 @@ routes.post('/session', SesssionController.store);
 
 routes.use(authMiddleware);
 routes.put('/users', UserController.update);
-/*
-routes.post('/session', (req, res) => {
-  return res.json({ error: 'oi' });
-});
-*/
+
 module.exports = routes;
